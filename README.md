@@ -121,3 +121,4 @@ Server sekarang berjalan di http://localhost:3000. Anda dapat mengirim permintaa
 ## Lampiran
 
 - Source Code untuk [Front-End Website Anime List](https://github.com/revvza/Front-End-WebAnimeList)
+- Dokumentasi Pembuatan API dan Testing Menggunakan Postman bisa diakses di [Link Berikut](https://drive.google.com/file/d/1Tk7gF7d19bfKxX_JuEW3rMuIpsKy0pUl/view?usp=sharing)
