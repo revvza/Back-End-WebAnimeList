@@ -118,7 +118,39 @@ Server sekarang berjalan di http://localhost:3000. Anda dapat mengirim permintaa
   DELETE /anime/:id
 ```
 
+### Penambahan Fitur (revisi)
+
+- Delete anime berdasarkan title, misalnya menghapus anime dengan title gintama
+
+  ```
+    DELETE /anime?title=gintama
+  ```
+
+- Delete anime berdasarkan type, misalnya menghapus anime dengan type movie
+
+  ```
+    DELETE /anime?type=movie
+  ```
+
+- Delete anime berdasarkan status, misalnya menghapus anime dengan status finished airing
+
+  ```
+    DELETE /anime?status=finished airing
+  ```
+
+- Delete anime berdasarkan premiered, misalnya menghapus anime dengan premiered Spring
+
+  ```
+    DELETE /anime?premiered=Spring
+  ```
+
+- Delete anime berdasarkan duration, misalnya menghapus anime dengan duration 24 min
+
+  ```
+    DELETE /anime?duration=24 min
+  ```
+
 ## Lampiran
 
 - Source Code untuk [Front-End Website Anime List](https://github.com/revvza/Front-End-WebAnimeList)
-- Dokumentasi Pembuatan API dan Testing Menggunakan Postman bisa diakses di [Link Berikut](https://drive.google.com/file/d/1Tk7gF7d19bfKxX_JuEW3rMuIpsKy0pUl/view?usp=sharing)
+- Dokumentasi Pembuatan API dan Testing Menggunakan Postman bisa diakses di [Link Berikut](https://drive.google.com/file/d/1BgsoMiQeACkYmqd-U3UxefZFZK6bRk9R/view?usp=drive_link)
