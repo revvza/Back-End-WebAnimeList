@@ -74,6 +74,38 @@ app.delete(`/anime/:id`, async (req, res) => {
   res.json(anime)
 })
 
+app.delete('/anime', async (req, res) => {
+  const {
+    title, 
+    type,
+    status,
+    premiered,
+    duration,
+  } = req.query;
+
+  const anime = await prisma.anime.deleteMany({
+      where : {
+          title : {
+              contains : title || undefined 
+          },
+          type: { 
+            contains : type || undefined
+          },
+          status : {
+            contains : status || undefined 
+          },
+          premiered : {
+            contains : premiered || undefined 
+          },
+          duration: {
+            contains: duration || undefined
+        }
+      },
+    },
+  )
+  res.json(anime)
+})
+
 //Method GET
 
 //GET anime berdasarkan filter & sortir
