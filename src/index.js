@@ -74,6 +74,7 @@ app.delete(`/anime/:id`, async (req, res) => {
   res.json(anime)
 })
 
+//Delete berdasarkan kriteria tertentu
 app.delete('/anime', async (req, res) => {
   const {
     title, 
